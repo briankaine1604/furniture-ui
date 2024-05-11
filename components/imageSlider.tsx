@@ -51,7 +51,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
             alt={alt}
             aria-hidden={imageIndex !== index}
             className="img-slider-img"
-            style={{ translate: `${-100 * imageIndex}%` }}
+            style={{ transform: `translateX(-${100 * imageIndex}%)` }}
           />
         ))}
       </div>

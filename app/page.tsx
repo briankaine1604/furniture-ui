@@ -5,6 +5,7 @@ import img3 from "@/public/slider/img3.jpg";
 import img4 from "@/public/slider/img4.jpg";
 import { ImageSlider } from "@/components/imageSlider";
 import { Section } from "@/components/section";
+import ImageCarousel from "@/components/carousel";
 
 export default function Home() {
   const IMAGES = [
@@ -17,7 +18,8 @@ export default function Home() {
   return (
     <main>
       <div className=" h-screen w-full flex flex-col">
-        <ImageSlider images={IMAGES} />
+        {/* <ImageSlider images={IMAGES} /> */}
+        <ImageCarousel images={IMAGES} />
       </div>
       <Section />
     </main>
